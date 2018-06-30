@@ -1,4 +1,4 @@
-Simple mechanical trigger for opening the office door.
+Simple mechanical trigger for opening the office door. Does not taps into the current system. It is just an external physical actuator.
 
 # Hardware
 * Wemos D1 ESP8266 - https://www.ebay.com/itm/ESP8266-ESP12-NodeMcu-Lua-WeMos-D1-Mini-WiFi-Develop-Kit-Development-Board-TE441/272435177267?hash=item3f6e66e733:g:I3YAAOSwjB9a4C1d
