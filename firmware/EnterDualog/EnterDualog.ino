@@ -23,17 +23,16 @@ void setup()
   Serial.println("\nWaiting for time ...");
   while (!time(nullptr));
   Serial.println("Time received.");
-
-  door.attach(DOOR_PIN);
-  door.write(DOOR_ANGLE_CLOSE);
 }
 
 void openDoor()
 {
   Serial.println("Opening door ...");
+  door.attach(DOOR_PIN);
   door.write(DOOR_ANGLE_OPEN);
   delay(DOOR_DELAY);
   door.write(DOOR_ANGLE_CLOSE);
+  door.detach();
 }
 
 void printTime()
